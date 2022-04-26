@@ -1,0 +1,73 @@
+@import url(./reset.css);
+@import url(./Header.scss);
+@import url(./Nav.scss);
+
+body{
+
+    div.profile{
+        div.main{
+            height: calc(100vh - 10px);
+            section.background{
+                height: 65%;
+                background: url(../images/bg_default.png) no-repeat 0 0;
+            }
+            section.profile_main{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                div.profile_img{
+                    position: absolute;
+                    left: 50%; top: -65px;
+                    margin-left: -50px;
+                    img{     
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                    }
+                }
+                div.profile_cont{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 45px;
+                    span.profile_name{font-size: 16px;}
+                    input{
+                        width: 148px;
+                        height: 24px;
+                        margin: 15px 0 20px;
+                        padding: 0 5px;
+                        text-align:  center;
+                    }
+                    ul.profile_menu{
+                        display: flex;
+                        li{
+                            margin: 0 6px;
+                            a{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                font-weight: bold;
+                                span{
+                                    display: block;
+                                    width: 52px;
+                                    height: 52px;
+                                    border-radius: 50%;
+                                    line-height: 52px;
+                                    text-align: center;
+                                    margin-bottom: 15px;
+                                    background: #f2f2f2;
+                                    color: #513736;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+    

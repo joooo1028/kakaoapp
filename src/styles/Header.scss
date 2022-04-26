@@ -1,0 +1,73 @@
+@import url(./reset.css);
+.header{
+    position: fixed;
+    left: 0; top: 0;
+    height: 64px; width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 12px;
+    background: #513736;
+    .status_bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 37.5%;
+        div{
+            flex: 1;
+        }
+        .left_item{
+            text-align: left;
+        }
+        .center_item{
+            text-align: center;
+        }
+        .right_item{
+            text-align: right;
+            span{
+                display: inline-block;
+                transform: translateY(-7%);
+            }
+        }
+        *{
+            padding: 3px;
+        }
+
+    }
+    .title_bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        height: 62.5%;
+        *{
+            flex: 1;
+            font-size: 16px;
+        }
+        h1{
+            order: 2; 
+            text-align: center;
+            span{color: #f8ea65;}
+        }
+        .left_item{
+            order: 1; 
+            text-align: left;
+            color: #fff;
+            opacity: 0.5;
+            a{
+                color: #fff;
+            }
+        }
+        .right_item{
+            order: 3; 
+            text-align: right; 
+            font-size: 20px;
+            a{color: #fff;}
+        }
+        
+
+    }
+}
