@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function ChatList({id,name,img,message}) {
+function ChatList({id,name,img,message,email}) {
   const now = new Date();
   const nowhours = now.getHours();
   const nowminutes = now.getMinutes();
@@ -9,7 +9,7 @@ function ChatList({id,name,img,message}) {
   return (
     <>
     <li>
-    <Link to="/chatting" state={{name,img}}>
+    <Link to="/chatting" state={{name,img,email}}>
       <span className='chats_img'><img src={img} alt={name} /></span>
       <span className='chats_cont'>
         <span className='chats_name'>{name}</span>

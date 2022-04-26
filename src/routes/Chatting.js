@@ -19,7 +19,7 @@ function Chatting() {
     const thismonth = monthly[newmonth];
     
     const location = useLocation();
-    const {name,img} = location.state;
+    const {name,img,email} = location.state;
 
   return (
     <div className='chatting'>
@@ -34,7 +34,7 @@ function Chatting() {
         </div>
         <div className='chat_box other'>
             <div className='other_info'>
-                <Link to='/profile'><span className='profile_img'><img src={img} alt={name} /></span></Link>
+                <Link to='/profile' state={{name,img,email}}><span className='profile_img'><img src={img} alt={name} /></span></Link>
                 <span className='profile_name'>{name}</span>
             </div>
             <span className='chat'>And this is an answer</span>

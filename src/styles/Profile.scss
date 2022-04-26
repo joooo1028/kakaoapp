@@ -10,6 +10,7 @@ body{
             section.background{
                 height: 65%;
                 background: url(../images/bg_default.png) no-repeat 0 0;
+                background-size: cover;
             }
             section.profile_main{
                 display: flex;

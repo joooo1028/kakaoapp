@@ -21,7 +21,7 @@ function Profile() {
                 <span className='profile_name'>{name}</span>
                 <input type="mail" className='profile_email' placeholder={email} />
                 <ul className='profile_menu'>
-                    <li><Link to="/chatting"><span><FaComment /></span>Chatroom</Link></li>
+                    <li><Link to="/chatting" state={{name,email,img}}><span><FaComment /></span>Chatroom</Link></li>
                     <li><Link to="/"><span><FaPencilAlt /></span>Edit Profile</Link></li>
                 </ul>
             </div>
